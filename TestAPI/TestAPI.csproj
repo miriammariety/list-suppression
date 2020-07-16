@@ -140,6 +140,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="input.csv" />
+    <Content Include="input_cut.csv" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -185,9 +187,9 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebAPI_Test\WebAPI_Test.csproj">
-      <Project>{32f24e1c-abcd-4e62-92ab-1dfe66b7b6d0}</Project>
-      <Name>WebAPI_Test</Name>
+    <ProjectReference Include="..\API\API.csproj">
+      <Project>{E2F8F25F-44C1-4D5D-8371-0EB87D388FE8}</Project>
+      <Name>API</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

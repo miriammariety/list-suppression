@@ -1,0 +1,14 @@
+C:\Users\miria\Documents\Infocore\ListSuppression\API\bin\Debug\API.dll
+C:\Users\miria\Documents\Infocore\ListSuppression\API\bin\Debug\API.pdb
+C:\Users\miria\Documents\Infocore\ListSuppression\API\bin\Debug\RestSharp.dll
+C:\Users\miria\Documents\Infocore\ListSuppression\API\bin\Debug\RestSharp.xml
+C:\Users\miria\Documents\Infocore\ListSuppression\API\obj\Debug\API.csprojAssemblyReference.cache
+C:\Users\miria\Documents\Infocore\ListSuppression\API\obj\Debug\API.csproj.CoreCompileInputs.cache
+C:\Users\miria\Documents\Infocore\ListSuppression\API\obj\Debug\API.csproj.CopyComplete
+C:\Users\miria\Documents\Infocore\ListSuppression\API\obj\Debug\API.dll
+C:\Users\miria\Documents\Infocore\ListSuppression\API\obj\Debug\API.pdb
+C:\Users\miria\Documents\Infocore\ListSuppression\API\bin\Debug\Newtonsoft.Json.dll
+C:\Users\miria\Documents\Infocore\ListSuppression\API\bin\Debug\Newtonsoft.Json.xml
+C:\Users\miria\Documents\Infocore\ListSuppression\API\bin\Debug\API.dll.config
+C:\Users\miria\Documents\Infocore\ListSuppression\API\bin\Debug\ChoETL.dll
+C:\Users\miria\Documents\Infocore\ListSuppression\API\bin\Debug\ChoETL.JSON.dll

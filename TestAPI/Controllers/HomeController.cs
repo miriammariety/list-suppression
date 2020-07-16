@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using API;
 using System.Web.Mvc;
-using WebAPI_Test;
 
 namespace TestAPI.Controllers
 {
@@ -30,7 +26,10 @@ namespace TestAPI.Controllers
 
         public ActionResult Test()
         {
-            ViewBag.Message = MainClass.GetResponse();
+            ApiService service = new ApiService();
+            //ViewBag.Message = service.GetResponse();
+            ViewBag.Json = service.ConvertToJson();
+
             return View();
         }
     }

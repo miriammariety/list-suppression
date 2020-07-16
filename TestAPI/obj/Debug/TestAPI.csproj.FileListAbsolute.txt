@@ -62,10 +62,7 @@ C:\Users\miria\Documents\Infocore\ListSuppression\TestAPI\bin\System.Web.Razor.d
 C:\Users\miria\Documents\Infocore\ListSuppression\TestAPI\bin\System.Web.WebPages.Deployment.dll
 C:\Users\miria\Documents\Infocore\ListSuppression\TestAPI\bin\System.Web.WebPages.dll
 C:\Users\miria\Documents\Infocore\ListSuppression\TestAPI\bin\System.Web.WebPages.Razor.dll
-C:\Users\miria\Documents\Infocore\ListSuppression\TestAPI\bin\WebAPI_Test.dll
 C:\Users\miria\Documents\Infocore\ListSuppression\TestAPI\bin\WebGrease.dll
-C:\Users\miria\Documents\Infocore\ListSuppression\TestAPI\bin\WebAPI_Test.pdb
-C:\Users\miria\Documents\Infocore\ListSuppression\TestAPI\bin\WebAPI_Test.dll.config
 C:\Users\miria\Documents\Infocore\ListSuppression\TestAPI\bin\RestSharp.xml
 C:\Users\miria\Documents\Infocore\ListSuppression\TestAPI\bin\System.Web.Helpers.xml
 C:\Users\miria\Documents\Infocore\ListSuppression\TestAPI\bin\System.Web.Mvc.xml
@@ -82,3 +79,8 @@ C:\Users\miria\Documents\Infocore\ListSuppression\TestAPI\obj\Debug\TestAPI.cspr
 C:\Users\miria\Documents\Infocore\ListSuppression\TestAPI\obj\Debug\TestAPI.csproj.CopyComplete
 C:\Users\miria\Documents\Infocore\ListSuppression\TestAPI\obj\Debug\TestAPI.dll
 C:\Users\miria\Documents\Infocore\ListSuppression\TestAPI\obj\Debug\TestAPI.pdb
+C:\Users\miria\Documents\Infocore\ListSuppression\TestAPI\bin\API.dll
+C:\Users\miria\Documents\Infocore\ListSuppression\TestAPI\bin\API.pdb
+C:\Users\miria\Documents\Infocore\ListSuppression\TestAPI\bin\API.dll.config
+C:\Users\miria\Documents\Infocore\ListSuppression\TestAPI\bin\ChoETL.dll
+C:\Users\miria\Documents\Infocore\ListSuppression\TestAPI\bin\ChoETL.JSON.dll
