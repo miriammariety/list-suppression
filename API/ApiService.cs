@@ -4,6 +4,8 @@ using Newtonsoft.Json;
 using RestSharp;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -16,20 +18,29 @@ namespace API
 {
     public class ApiService
     {
-        //public string Endpoint { get; set; }
-        //public ApiService(string endpoint)
-        //{
-        //    Endpoint = endpoint;
-        //}
+        FileMapper Mapper { get; set; }
+        
+        public ApiService()
+        {
+            Mapper = new FileMapper();
+        }
 
         public string GetResponse()
         {
-            string endpoint = "https://cat-fact.herokuapp.com/facts";
+            // Implement csv to json
+            // Use json as parameter
+
+            string endpoint = ConfigurationManager.AppSettings.Get("ApiEndpoint");
             var client = new RestClient(endpoint);
-            //var parameters = "v1/employees";
+            var file = Mapper.MapFile("~/sample.json");
+            var json = File.ReadAllText(file);
+
+            Debug.WriteLine(json);
 
             var request = new RestRequest(Method.GET);
-            request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
+            request.AddHeader("Content-Type", "application/json");
+            request.AddHeader("Cookie", "__cfduid=d172b9aae6dec71b8de31867e09365e401594744964");
+            request.AddParameter("application/json", json, ParameterType.RequestBody);
             request.AddHeader("Accept", "application/json");
 
             var result = client.Execute(request);
@@ -39,8 +50,7 @@ namespace API
 
         public string ConvertToJson()
         {
-            FileMapper mapper = new FileMapper();
-            string path = mapper.MapFile("~/input_cut.csv");
+            string path = Mapper.MapFile("~/input_cut.csv");
             var csv = File.ReadAllText(path);
 
             StringBuilder sb = new StringBuilder();
@@ -53,12 +63,24 @@ namespace API
             }
 
             return sb.ToString();
-
         }
 
-        public string ConvertToCSV()
+        public void ConvertToCSV(string json)
         {
-            return null;
+            DataTable dt = JsonConvert.DeserializeObject<DataTable>(json);
+            var lines = new List<string>();
+            string[] columnNames = dt.Columns.Cast<DataColumn>().
+                                              Select(column => column.ColumnName).
+                                              ToArray();
+            var header = string.Join(",", columnNames);
+            lines.Add(header);
+            var valueLines = dt.AsEnumerable()
+                               .Select(row => string.Join(",", row.ItemArray));
+            lines.AddRange(valueLines);
+
+            string path = Mapper.MapFile("~/output.csv");
+
+            File.WriteAllLines(path, lines);
         }
     }
 }

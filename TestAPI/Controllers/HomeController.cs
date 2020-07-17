@@ -27,8 +27,12 @@ namespace TestAPI.Controllers
         public ActionResult Test()
         {
             ApiService service = new ApiService();
-            //ViewBag.Message = service.GetResponse();
-            ViewBag.Json = service.ConvertToJson();
+            ViewBag.Message = service.GetResponse();
+            
+            var json = service.ConvertToJson();
+            ViewBag.Json = json;
+
+            service.ConvertToCSV(json);
 
             return View();
         }

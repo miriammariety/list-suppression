@@ -1,0 +1,38 @@
+﻿{
+  "records": [
+    {
+      "clientRecordId": "1",
+      "firstName": "Barbie",
+      "lastName": "Schultz",
+      "emails": [
+        "hxvzerplu3l@temporary-mail.net"
+      ],
+      "phoneNumbers": [
+        "605-338-4527"
+      ],
+      "address1": "785  Andy Street",
+      "address2": "",
+      "city": "Sioux Falls",
+      "state": "SD",
+      "postalCode": "57102",
+      "postalExtension": ""
+    },
+    {
+      "clientRecordId": "2",
+      "firstName": "Priscilla",
+      "lastName": "Hughes",
+      "emails": [
+        "priscilla.hughes@example.com"
+      ],
+      "phoneNumbers": [
+        "(088)-902-5883"
+      ],
+      "address1": "6029 Homenick Ridges Suite 551",
+      "address2": "",
+      "city": "Adelbertshire",
+      "state": "Connecticut",
+      "postalCode": "06305",
+      "postalExtension": "2706"
+    }
+  ]
+}
